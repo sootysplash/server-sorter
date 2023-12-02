@@ -54,6 +54,7 @@ public abstract class MultiplayerScreenMixin extends Screen {
                     ArrayDeque<ServerInfo> ad = new ArrayDeque<>();
                     listy = new ServerList(MinecraftClient.getInstance());
                     ad.clear();
+                    ServerList sv = getServerList();
 
 //                    System.out.println("listy pre size: " + listy.size());
 
@@ -84,9 +85,11 @@ public abstract class MultiplayerScreenMixin extends Screen {
                     }
 //                    System.out.println("g amount: " + g);
 
-                    serverListWidget.setServers(listy);
-                    serverList.saveFile();
-                    MainSS.LOGGER.log(Level.INFO, "Set servers!");
+                    if(sv != listy) {
+                        serverListWidget.setServers(listy);
+                        serverList.saveFile();
+                        MainSS.LOGGER.log(Level.INFO, "Set servers!");
+                    }
 
 //                    System.out.println("listy size: " + listy.size());
 
