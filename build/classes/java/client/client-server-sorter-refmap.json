@@ -1,0 +1,14 @@
+{
+  "mappings": {
+    "me/sootysplash/mixin/client/MultiplayerScreenMixin": {
+      "tick": "Lnet/minecraft/class_500;method_25393()V"
+    }
+  },
+  "data": {
+    "named:intermediary": {
+      "me/sootysplash/mixin/client/MultiplayerScreenMixin": {
+        "tick": "Lnet/minecraft/class_500;method_25393()V"
+      }
+    }
+  }
+}

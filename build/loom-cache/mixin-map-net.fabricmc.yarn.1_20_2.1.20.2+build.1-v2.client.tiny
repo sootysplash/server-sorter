@@ -1,0 +1,6 @@
+v1	named	intermediary
+FIELD	me/sootysplash/mixin/client/MultiplayerScreenMixin	Lnet/minecraft/client/gui/screen/multiplayer/MultiplayerServerListWidget;	serverListWidget	field_3043
+FIELD	me/sootysplash/mixin/client/MultiplayerScreenMixin	Lnet/minecraft/client/option/ServerList;	serverList	field_3040
+FIELD	me/sootysplash/mixin/client/MultiplayerScreenMixin	Lnet/minecraft/client/network/MultiplayerServerListPinger;	serverListPinger	field_3037
+METHOD	me/sootysplash/mixin/client/MultiplayerScreenMixin	()Lnet/minecraft/client/option/ServerList;	getServerList	method_2529
+METHOD	me/sootysplash/mixin/client/MultiplayerScreenMixin	()Lnet/minecraft/client/network/MultiplayerServerListPinger;	getServerListPinger	method_2538

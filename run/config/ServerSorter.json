@@ -1,0 +1,7 @@
+{
+  "enabled": true,
+  "str": "Ping",
+  "str2": "Off",
+  "invert": false,
+  "delay": 100
+}

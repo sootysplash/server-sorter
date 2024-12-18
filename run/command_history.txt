@@ -1,0 +1,4 @@
+/give @p minecraft:water_bucket
+/reload-range
+/time set day
+/reload-range

@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "serversorter",
+	"version": "1.0.0",
+	"name": "Server Sorter",
+	"description": "Sorts your server list based off of different statistics.",
+	"authors": [
+		"Sootysplash"
+	],
+	"contact": {
+		"homepage": "https://github.com/sootysplash/",
+		"sources": "https://github.com/sootysplash/server-sorter"
+	},
+	"license": "Apache-2.0",
+	"icon": "assets/serversorter/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"me.sootysplash.MainSS"
+		],
+		"modmenu": [
+			"me.sootysplash.ModMenuSS"
+		]
+	},
+	"mixins": [
+		{
+			"config": "serversorter.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.14.18",
+		"minecraft": ">=1.19.3",
+		"java": ">=17"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
